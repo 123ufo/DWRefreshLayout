@@ -1,12 +1,12 @@
 # DWRefreshLayout
 一个支持上拉和下拉,支持所有的View,支持自动刷新,支持自定义各种样式的刷新Layout.
 
-###Gradle compile dependency:
+### Gradle compile dependency:
 
 	compile 'com.ufo:DWRefreshLayout:0.9.0'
 
 
-###1最简单的使用示例:
+### 1最简单的使用示例:
 	
 
 
