@@ -54,6 +54,8 @@
             }
         });
 
-
+### TextView
 <img src="https://github.com/123ufo/DWRefreshLayout/blob/master/shotimg/1.gif?raw=true" width="280"/>
+
+### RecyclerView
 <img src="https://github.com/123ufo/DWRefreshLayout/blob/master/shotimg/2.gif?raw=true" width="280"/>
