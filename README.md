@@ -79,3 +79,6 @@
 
 ### RecyclerView
 <img src="https://github.com/123ufo/DWRefreshLayout/blob/master/shotimg/2.gif?raw=true" width="280"/>
+
+### Material Design
+<img src="https://github.com/123ufo/DWRefreshLayout/blob/master/shotimg/3.gif?raw=true" width="280"/>
