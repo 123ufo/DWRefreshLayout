@@ -82,3 +82,6 @@
 
 ### Material Design
 <img src="https://github.com/123ufo/DWRefreshLayout/blob/master/shotimg/3.gif?raw=true" width="280"/>
+
+
+#### 更多功能请参照Demo里的例子
