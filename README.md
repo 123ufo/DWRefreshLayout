@@ -54,3 +54,5 @@
             }
         });
 
+
+<img src="https://github.com/123ufo/DWRefreshLayout/blob/master/shotimg/1.gif?raw=true" width="280"/>
