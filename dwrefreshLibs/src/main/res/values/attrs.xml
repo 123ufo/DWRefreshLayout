@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DWRefreshLayout">
+        <attr name="refresh_style">
+            <enum name="style_below" value="1"/>
+            <enum name="style_default" value="2"/>
+            <enum name="style_material" value="3"/>
+        </attr>
+
+    </declare-styleable>
+</resources>

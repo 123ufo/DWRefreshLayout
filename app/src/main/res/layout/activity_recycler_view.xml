@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ufo.sample.RecyclerViewActivity">
+
+    <com.ufo.dwrefresh.view.DWRefreshLayout
+        android:id="@+id/dwRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </com.ufo.dwrefresh.view.DWRefreshLayout>
+
+</RelativeLayout>

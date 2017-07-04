@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.ufo.sample.MainActivity">
+
+        <TextView
+            android:id="@+id/tv_simple"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="最简单的用法\n(包含TextView)"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:id="@+id/tv_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="包含\nFrameLayout"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:id="@+id/tv_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="包含\nScrollView"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:id="@+id/tv_recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="包含\nRecycleView"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:id="@+id/tv_auto_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="自动刷新"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:id="@+id/tv_material"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Material design"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Empty"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:id="@+id/tv_below"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="刷新头在内容之下"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:id="@+id/tv_custom_head_view"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="自定义刷新头"
+            android:textColor="@color/colorWhite"/>
+        <TextView
+            android:id="@+id/tv_custom_foot_view"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="自定义加载尾"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+</ScrollView>

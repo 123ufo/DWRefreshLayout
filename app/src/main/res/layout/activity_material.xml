@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_material"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ufo.sample.MaterialActivity">
+
+
+    <com.ufo.dwrefresh.view.DWRefreshLayout
+        android:id="@+id/dwRefreshLayout"
+        android:layout_width="match_parent"
+        app:refresh_style="style_material"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="#11ff0000"
+            android:text="Material design"
+            android:textSize="25dp"/>
+
+    </com.ufo.dwrefresh.view.DWRefreshLayout>
+
+</RelativeLayout>
