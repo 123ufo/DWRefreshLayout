@@ -86,5 +86,7 @@
 
 #### 更多功能请参照Demo里的例子
 
-###扫我安装体验
+---
+
+## 扫我安装体验
 <img src="https://github.com/123ufo/DWRefreshLayout/blob/master/shotimg/2qrcode.png?raw=true" width="280"/>
