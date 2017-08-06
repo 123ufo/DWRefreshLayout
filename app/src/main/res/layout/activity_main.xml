@@ -81,6 +81,15 @@
             android:gravity="center"
             android:text="Empty"
             android:textColor="@color/colorWhite"/>
+        <TextView
+            android:id="@+id/tv_webView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="WebView"
+            android:textColor="@color/colorWhite"/>
 
         <TextView
             android:id="@+id/tv_below"

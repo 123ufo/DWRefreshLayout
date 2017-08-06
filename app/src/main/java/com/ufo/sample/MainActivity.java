@@ -59,6 +59,12 @@ public class MainActivity extends AppCompatActivity {
                 myStartActivity(EmptyActivity.class);
             }
         });
+        findViewById(R.id.tv_webView).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myStartActivity(WebViewActivity.class);
+            }
+        });
         findViewById(R.id.tv_below).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

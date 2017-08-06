@@ -33,7 +33,7 @@ publish {
     userOrg = '123ufo'//bintray.com用户名
     groupId = 'com.ufo'//jcenter上的路径
     artifactId = 'DWRefreshLayout'//项目名称
-    publishVersion = '0.9.0'//版本号
+    publishVersion = '0.9.1'//版本号
     desc = '一个支持上拉和下拉,支持所有的View,支持自动刷新,支持自定义各种样式的刷新Layout.'//描述，不重要
     website = 'https://github.com/123ufo/DWRefreshLayout'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
 }

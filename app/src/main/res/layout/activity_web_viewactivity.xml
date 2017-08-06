@@ -1,31 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/activity_recycler_view"
+    android:id="@+id/activity_web_viewactivity"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context="com.ufo.sample.RecyclerViewActivity">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:text="标题"
-        android:gravity="center"
-        android:layout_height="50dp"/>
+    tools:context="com.ufo.sample.WebViewActivity">
 
     <com.ufo.dwrefresh.view.DWRefreshLayout
         android:id="@+id/dwRefreshLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycleView"
+        <WebView
+            android:id="@+id/webView"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-        </android.support.v7.widget.RecyclerView>
+        </WebView>
+
     </com.ufo.dwrefresh.view.DWRefreshLayout>
 
-</LinearLayout>
+</RelativeLayout>
