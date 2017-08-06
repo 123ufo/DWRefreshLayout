@@ -149,7 +149,7 @@ public class DWRefreshLayout extends FrameLayout {
      * 如果{@link #mRefreshStyle}的值为{@link #STYLE_DEFAULT}或是
      * 为{@link #STYLE_MATERIAL} headView在当前刷新布局的位置是1
      *
-     * @param headView
+     * @param headView 头布局
      */
     private void addHeadView(View headView) {
         this.removeView(findViewWithTag(HEAD_TAG));
@@ -169,7 +169,7 @@ public class DWRefreshLayout extends FrameLayout {
     /**
      * 添加脚布局
      *
-     * @param footView
+     * @param footView 脚布局
      */
     private void addFootView(View footView) {
         this.removeView(findViewWithTag(FOOT_TAG));
@@ -185,7 +185,7 @@ public class DWRefreshLayout extends FrameLayout {
     /**
      * 设置自定义的头布局
      *
-     * @param headView
+     * @param headView 头布局
      */
     public void setHeadView(View headView) {
         if (!(headView instanceof IRefreshHead)) {
@@ -202,7 +202,7 @@ public class DWRefreshLayout extends FrameLayout {
     /**
      * 设置自定义的脚布局
      *
-     * @param footView
+     * @param footView 脚布局
      */
     public void setFootView(View footView) {
         if (!(footView instanceof ILoadMoreFoot)) {
@@ -219,7 +219,7 @@ public class DWRefreshLayout extends FrameLayout {
 
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
-
+        b = getHeight();
         if (mRefreshStyle == STYLE_BELOW) {
             //below
             mHeadView.layout(0, 0, r, mHeadViewHeight);
@@ -371,7 +371,7 @@ public class DWRefreshLayout extends FrameLayout {
     /**
      * 移动布局
      *
-     * @param moveY
+     * @param moveY 手指移动的Y坐标
      */
     private void move(int moveY) {
         if (mDirection == DIRECTION_DOWN) {
@@ -399,8 +399,8 @@ public class DWRefreshLayout extends FrameLayout {
     /**
      * 重置
      *
-     * @param startY
-     * @param endY
+     * @param startY 起始Y
+     * @param endY   结束Y
      */
     private void reset(int startY, int endY) {
         Log.d(TAG, "startY: " + startY + " endY: " + endY);
@@ -456,7 +456,7 @@ public class DWRefreshLayout extends FrameLayout {
     /**
      * 设置刷新
      *
-     * @param refresh
+     * @param refresh true为刷新,false为关闭刷新
      */
     public void setRefresh(boolean refresh) {
         if (refresh) {
@@ -480,13 +480,27 @@ public class DWRefreshLayout extends FrameLayout {
 
     OnRefreshListener mOnRefreshListener;
 
+    /**
+     * 设置刷新回调接口
+     *
+     * @param onRefreshListener 刷新回调接口
+     */
     public void setOnRefreshListener(OnRefreshListener onRefreshListener) {
         mOnRefreshListener = onRefreshListener;
     }
 
+    /**
+     * 刷新回调接口
+     */
     public interface OnRefreshListener {
+        /**
+         * 当刷新被触发时会调用此方法
+         */
         void onRefresh();
 
+        /**
+         * 当加载更多时会调用此方法
+         */
         void onLoadMore();
     }
 

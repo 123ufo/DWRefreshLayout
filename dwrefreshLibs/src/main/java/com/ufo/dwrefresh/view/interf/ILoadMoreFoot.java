@@ -6,7 +6,11 @@ package com.ufo.dwrefresh.view.interf;
  * on: 2017/6/2.
  * <p>
  * 描述：加载更多脚布局
- * 生命周期:onStart()--> onPullUp(int distance)--> onBound()--> onFingerUp(distance)-->onStop();
+ * 生命周期:1.onStart()
+ * 2.onPullUp(int distance)
+ * 3.onBound()
+ * 4.onFingerUp(distance)
+ * 5.onStop();
  */
 public interface ILoadMoreFoot {
 

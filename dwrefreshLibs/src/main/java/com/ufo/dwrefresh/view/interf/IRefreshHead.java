@@ -7,7 +7,11 @@ package com.ufo.dwrefresh.view.interf;
  * <p>
  * 描述：刷新布局的头view
  * <p>
- * 生命周期:onStart()--> onPullDown(int distance)--> onBound()--> onFingerUp(distance);
+ * 生命周期:1.onStart()
+ * 2.onPullDown(int distance)
+ * 3.onBound()
+ * 4.onFingerUp(distance)
+ * 5.onStop();
  */
 public interface IRefreshHead {
 
