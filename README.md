@@ -23,7 +23,7 @@
 
 ### Gradle compile dependency:
 
-	compile 'com.ufo:DWRefreshLayout:0.9.0'
+	compile 'com.ufo:DWRefreshLayout:0.9.1'
 
 
 ### DWRefreshLayout属性
