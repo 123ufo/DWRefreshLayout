@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import com.ufo.dwrefresh.view.DWRefreshLayout;
 
@@ -17,6 +18,13 @@ public class AutoRefreshActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_auto_refresh);
+
+        findViewById(R.id.tv_false).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mDwRefreshLayout.setRefresh(false);
+            }
+        });
 
 
         mDwRefreshLayout = (DWRefreshLayout) findViewById(R.id.dwRefreshLayout);

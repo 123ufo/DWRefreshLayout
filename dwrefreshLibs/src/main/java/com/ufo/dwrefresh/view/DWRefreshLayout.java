@@ -466,6 +466,9 @@ public class DWRefreshLayout extends FrameLayout {
             mAnimatorDuration = ANIMATOR_AUTO_REFRESH_DURATION;
             reset(0, mHeadViewHeight);
         } else {
+            if(mStatus == STATUS_NONE){
+                return;
+            }
             if (mDirection == DIRECTION_DOWN) {
                 reset(mHeadViewHeight, 0);
                 mIRefreshHead.onStop();

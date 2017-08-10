@@ -22,4 +22,11 @@
             android:textSize="25dp"/>
 
     </com.ufo.dwrefresh.view.DWRefreshLayout>
+
+    <Button
+        android:id="@+id/tv_false"
+        android:layout_width="wrap_content"
+        android:text="手动关闭测试"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>
