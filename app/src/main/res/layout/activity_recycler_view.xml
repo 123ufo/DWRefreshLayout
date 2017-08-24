@@ -18,6 +18,7 @@
     <com.ufo.dwrefresh.view.DWRefreshLayout
         android:id="@+id/dwRefreshLayout"
         android:layout_width="match_parent"
+        app:refresh_style="style_material"
         android:layout_height="match_parent">
 
         <android.support.v7.widget.RecyclerView

@@ -19,6 +19,8 @@ public class SimpleActivity extends AppCompatActivity {
 
 
         final DWRefreshLayout dwRefreshLayout = (DWRefreshLayout) findViewById(R.id.dwRefreshLayout);
+        //开启禁止加载更多
+//        dwRefreshLayout.lockLoadMore(true);
         dwRefreshLayout.setOnRefreshListener(new DWRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {

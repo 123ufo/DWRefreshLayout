@@ -10,6 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
 
 import com.ufo.dwrefresh.view.DWRefreshLayout;
+import com.ufo.dwrefresh.view.MaterialHeadView;
 import com.ufo.sample.adapter.RecyclerViewAdapter;
 
 public class RecyclerViewActivity extends AppCompatActivity {
@@ -55,6 +56,9 @@ public class RecyclerViewActivity extends AppCompatActivity {
         recyclerView.setAdapter(mAdapter);
 
         mDwRefreshLayout = (DWRefreshLayout) findViewById(R.id.dwRefreshLayout);
+        mDwRefreshLayout.setHeadView(new MaterialHeadView(this));
+        //开启禁止加载更多
+//        mDwRefreshLayout.lockLoadMore(true);
         mDwRefreshLayout.setOnRefreshListener(new DWRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {

@@ -87,6 +87,9 @@ public class DWRefreshLayout extends FrameLayout {
     //刷新头布局在刷新内容之上
     private static final int STYLE_MATERIAL = 3;
 
+    //是否禁止上拉加载更多默认是支持的
+    private boolean mDisenableLoadMore = false;
+
 
     public DWRefreshLayout(Context context) {
         this(context, null);
@@ -235,7 +238,7 @@ public class DWRefreshLayout extends FrameLayout {
             //material
             mHeadView.layout(0, -mHeadViewHeight + moveDistance, r, moveDistance);
             if (mDirection == DIRECTION_DOWN) {
-                mContentView.layout(0, t, r, b);
+                mContentView.layout(0, 0, r, b);
             } else if (mDirection == DIRECTION_UP) {
                 mContentView.layout(0, moveDistance, r, b + moveDistance);
             } else {
@@ -348,6 +351,10 @@ public class DWRefreshLayout extends FrameLayout {
                         reset((int) ((upY - downY) * mHeadViewTact), 0);
                     }
                 } else if (mDirection == DIRECTION_UP) {
+                    if(mDisenableLoadMore){
+                        //禁止加载更多
+                        return super.onTouchEvent(event);
+                    }
                     mILoadMoreFoot.onFingerUp(Math.abs(moveDistance));
                     if (Math.abs(moveDistance) >= mFootViewHeight) {
                         //触发加载
@@ -384,6 +391,10 @@ public class DWRefreshLayout extends FrameLayout {
             }
         } else {
             //上移
+            if(mDisenableLoadMore){
+                //禁止加载更多
+                return;
+            }
             moveDistance = (int) ((moveY - downY) * mFootViewTact);
             if (moveDistance <= -mFootViewHeight) {
                 mILoadMoreFoot.onBound();
@@ -466,7 +477,7 @@ public class DWRefreshLayout extends FrameLayout {
             mAnimatorDuration = ANIMATOR_AUTO_REFRESH_DURATION;
             reset(0, mHeadViewHeight);
         } else {
-            if(mStatus == STATUS_NONE){
+            if (mStatus == STATUS_NONE) {
                 return;
             }
             if (mDirection == DIRECTION_DOWN) {
@@ -478,6 +489,23 @@ public class DWRefreshLayout extends FrameLayout {
             }
             mStatus = STATUS_NONE;
         }
+    }
+
+    /**
+     * 当前是否在加载中或是刷新中
+     *
+     * @return
+     */
+    public boolean isRefresh() {
+        return mStatus != STATUS_NONE;
+    }
+
+    /**
+     * 禁用上拉加载更多
+     * @param lockLoadMore
+     */
+    public void  lockLoadMore(boolean lockLoadMore){
+        this.mDisenableLoadMore = lockLoadMore;
     }
 
 
