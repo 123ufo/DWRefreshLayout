@@ -90,7 +90,7 @@
     1自定义一个View or ViewGroup 然后实现IRefreshHead接口
     2然后实现IRefreshHead接口的相关方法
     更多详情请看Demo里的代码
-###自定义加载尾:
+### 自定义加载尾:
 
      1自定义一个View or ViewGroup 然后实现ILoadMoreFoot接口
      2然后实现ILoadMoreFoot接口的相关方法
