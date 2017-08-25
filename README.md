@@ -74,7 +74,7 @@
             }
         });
 
- ###其它功能:
+ ### 其它功能:
 
         //禁止加载更多功能，默认是允许的
        dwRefreshLayout.lockLoadMore(true);
@@ -85,7 +85,7 @@
        //手动触发刷新(设置为true)
        dwRefreshLayout.setRefresh(true)
 
-###自定义刷新头:
+### 自定义刷新头:
 
     1自定义一个View or ViewGroup 然后实现IRefreshHead接口
     2然后实现IRefreshHead接口的相关方法
@@ -95,6 +95,17 @@
      1自定义一个View or ViewGroup 然后实现ILoadMoreFoot接口
      2然后实现ILoadMoreFoot接口的相关方法
      更多详情请看Demo里的代码
+
+
+### 内置请求头有
+    DefaultHeadView     传统风格
+    MaterialHeadView    MD风格
+    EmptyHeadView   空请求头，用于实现下拉回弹效果
+
+### 内置加载更多尾有
+
+    DefaultFootView     传统风格
+    EmptyFootView   空加载更多尾,用于实同上拉回弹效果o
 
 
 ### TextView
