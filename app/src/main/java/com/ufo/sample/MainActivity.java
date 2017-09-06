@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
                 myStartActivity(SimpleActivity.class);
             }
         });
+
         findViewById(R.id.tv_fragment).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
