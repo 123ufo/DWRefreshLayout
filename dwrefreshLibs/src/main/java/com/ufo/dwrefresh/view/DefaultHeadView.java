@@ -1,6 +1,7 @@
 package com.ufo.dwrefresh.view;
 
 import android.content.Context;
+import android.support.annotation.ColorRes;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -43,6 +44,22 @@ public class DefaultHeadView extends FrameLayout implements IRefreshHead {
         mTvStatus = (TextView) view.findViewById(R.id.tv_status);
         mTvStatus.setText("自定义view");
         this.addView(view, mLayoutParams);
+    }
+
+    /**
+     * 设置刷新头的状态颜色
+     * @param textColor
+     */
+    public void setTextColor(@ColorRes int textColor) {
+        mTvStatus.setTextColor(getResources().getColor(textColor));
+    }
+
+    /**
+     * 设置刷新头的状态文字大小
+     * @param textSize
+     */
+    public void setTextSize(int textSize) {
+        mTvStatus.setTextSize(textSize);
     }
 
     @Override

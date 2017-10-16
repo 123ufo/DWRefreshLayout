@@ -5,7 +5,7 @@
     android:id="@+id/activity_web_viewactivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ufo.sample.WebViewActivity">
+    tools:context="com.ufo.sample.WebViewActivi">
 
     <com.ufo.dwrefresh.view.DWRefreshLayout
         android:id="@+id/dwRefreshLayout"
