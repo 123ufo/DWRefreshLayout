@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 import com.ufo.dwrefresh.view.DWRefreshLayout;
-import com.ufo.sample.widget.SimpleHeadView;
+import com.ufo.sample.widget.ToastHeadView;
 
 public class CustomHeadViewActivity extends AppCompatActivity {
     Handler mHandler = new Handler(Looper.getMainLooper());
@@ -19,10 +19,18 @@ public class CustomHeadViewActivity extends AppCompatActivity {
 
         final DWRefreshLayout dwRefreshLayout = (DWRefreshLayout) findViewById(R.id.dwRefreshLayout);
         //自定义一个最简单的刷新头
-        dwRefreshLayout.setHeadView(new SimpleHeadView(this));
+//        dwRefreshLayout.setHeadView(new SimpleHeadView(this));
+        final ToastHeadView headView = new ToastHeadView(this);
+        dwRefreshLayout.setHeadView(headView);
         dwRefreshLayout.setOnRefreshListener(new DWRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
+                mHandler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        headView.setToast("已为你更新了5条最新消息",R.color.colorPrimaryDarkLight);
+                    }
+                }, 1000);
                 mHandler.postDelayed(new Runnable() {
                     @Override
                     public void run() {
