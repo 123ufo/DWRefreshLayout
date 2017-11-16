@@ -386,9 +386,9 @@ public class DWRefreshLayout extends FrameLayout {
             moveDistance = (int) ((moveY - downY) * mHeadViewTact);
             if (moveDistance >= mHeadViewHeight) {
                 mIRefreshHead.onBound();
-            } else {
+            }/* else {*/
                 mIRefreshHead.onPullDown(moveDistance);
-            }
+//            }
         } else {
             //上移
             if(mDisenableLoadMore){
@@ -398,9 +398,9 @@ public class DWRefreshLayout extends FrameLayout {
             moveDistance = (int) ((moveY - downY) * mFootViewTact);
             if (moveDistance <= -mFootViewHeight) {
                 mILoadMoreFoot.onBound();
-            } else {
+            }/* else {*/
                 mILoadMoreFoot.onPullUp(Math.abs(moveDistance));
-            }
+//            }
         }
         Log.d(TAG, "moveDistance: " + moveDistance);
 
