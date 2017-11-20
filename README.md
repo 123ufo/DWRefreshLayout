@@ -107,6 +107,10 @@
     DefaultFootView     传统风格
     EmptyFootView   空加载更多尾,用于实同上拉回弹效果o
 
+### 经典刷新头
+
+[DWRefreshLayoutComponent][1]
+
 
 ### TextView
 <img src="https://github.com/123ufo/DWRefreshLayout/blob/master/shotimg/1.gif?raw=true" width="280"/>
@@ -124,3 +128,6 @@
 
 ## 扫我安装体验
 <img src="https://github.com/123ufo/DWRefreshLayout/blob/master/shotimg/2qrcode.png?raw=true" width="280"/>
+
+
+ [1]: https://github.com/123ufo/DWRefreshLayoutComponent
