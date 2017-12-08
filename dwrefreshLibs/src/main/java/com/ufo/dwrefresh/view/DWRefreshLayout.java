@@ -252,7 +252,10 @@ public class DWRefreshLayout extends FrameLayout {
 
 
     int downY;
+    int downX;
+
     int diffY;
+    int diffX;
 
 
     @Override
@@ -264,12 +267,17 @@ public class DWRefreshLayout extends FrameLayout {
         switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 downY = (int) ev.getY();
+                downX = (int) ev.getX();
                 mDirection = DIRECTION_NONE;
                 interception = false;
 //                Log.d(TAG, "dispatchTouchEvent down");
                 break;
             case MotionEvent.ACTION_MOVE:
                 diffY = (int) (downY - ev.getY());
+                diffX = (int) (downX - ev.getX());
+                if(Math.abs(diffX) > Math.abs(diffY)){
+                    return super.dispatchTouchEvent(ev);
+                }
                 if (diffY < 0) {
                     boolean contentViewCanScrollDown = ViewCompat.canScrollVertically(mContentView, -1);
                     if (!contentViewCanScrollDown) {

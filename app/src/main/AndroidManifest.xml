@@ -3,6 +3,7 @@
           package="com.ufo.sample">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -37,6 +38,10 @@
         <activity android:name=".CustomFootViewActivity">
         </activity>
         <activity android:name=".WebViewActivi">
+        </activity>
+        <activity android:name=".BannerViewActivity">
+        </activity>
+        <activity android:name=".ViewPagerActivity">
         </activity>
     </application>
 

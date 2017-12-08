@@ -84,5 +84,19 @@ public class MainActivity extends AppCompatActivity {
                 myStartActivity(CustomFootViewActivity.class);
             }
         });
+
+        findViewById(R.id.tv_banner).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myStartActivity(BannerViewActivity.class);
+            }
+        });
+
+        findViewById(R.id.tv_viewPager).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myStartActivity(ViewPagerActivity.class);
+            }
+        });
     }
 }

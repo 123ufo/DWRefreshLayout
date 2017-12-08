@@ -119,5 +119,23 @@
             android:gravity="center"
             android:text="自定义加载尾"
             android:textColor="@color/colorWhite"/>
+        <TextView
+            android:id="@+id/tv_banner"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="轮播图"
+            android:textColor="@color/colorWhite"/>
+        <TextView
+            android:id="@+id/tv_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="ViewPager"
+            android:textColor="@color/colorWhite"/>
     </LinearLayout>
 </ScrollView>
