@@ -127,7 +127,7 @@
 ---
 
 ## 扫我安装体验
-<img src="https://github.com/123ufo/DWRefreshLayout/blob/master/shotimg/2qrcode.png?raw=true" width="280"/>
+<img src="https://github.com/123ufo/DWRefreshLayout/blob/master/shotimg/3qrcode.png?raw=true" width="280"/>
 
 
  [1]: https://github.com/123ufo/DWRefreshLayoutComponent

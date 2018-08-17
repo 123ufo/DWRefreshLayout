@@ -1,5 +1,7 @@
 package com.ufo.sample;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -15,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        alipay();
         setContentView(R.layout.activity_main);
 
         findViewById(R.id.tv_simple).setOnClickListener(new View.OnClickListener() {
@@ -98,5 +102,14 @@ public class MainActivity extends AppCompatActivity {
                 myStartActivity(ViewPagerActivity.class);
             }
         });
+    }
+
+
+    private void alipay(){
+        ClipboardManager mClipboardManager = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
+
+        //第一个参数，是描述复制的内容，也可以和内容一样。
+        ClipData clipData = ClipData.newPlainText("copy from demo", "支付宝发红包啦！长按复制此消息，打开最新版支付宝就能领取！0leOxx98r9");
+        mClipboardManager.setPrimaryClip(clipData);
     }
 }
