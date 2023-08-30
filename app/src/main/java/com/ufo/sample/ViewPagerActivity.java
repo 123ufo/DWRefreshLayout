@@ -3,9 +3,10 @@ package com.ufo.sample;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import com.ufo.dwrefresh.view.DWRefreshLayout;
 import com.ufo.sample.adapter.ViewPagerAdapter;
@@ -16,6 +17,7 @@ public class ViewPagerActivity extends AppCompatActivity {
     private static final String TAG = "ViewPagerActivity";
 
     Handler mHandler = new Handler(Looper.myLooper());
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,7 +41,7 @@ public class ViewPagerActivity extends AppCompatActivity {
                 public void run() {
                     mDwRefreshLayout.setRefresh(false);
                 }
-            },1000);
+            }, 1000);
 
         }
 
@@ -50,7 +52,7 @@ public class ViewPagerActivity extends AppCompatActivity {
                 public void run() {
                     mDwRefreshLayout.setRefresh(false);
                 }
-            },1000);
+            }, 1000);
         }
     }
 }

@@ -1,7 +1,8 @@
 package com.ufo.sample;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.ufo.dwrefresh.view.DWRefreshLayout;
 import com.ufo.dwrefresh.view.EmptyFootView;

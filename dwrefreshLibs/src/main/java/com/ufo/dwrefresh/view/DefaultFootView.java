@@ -1,12 +1,13 @@
 package com.ufo.dwrefresh.view;
 
 import android.content.Context;
-import android.support.annotation.ColorRes;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+
+import androidx.annotation.ColorRes;
 
 import com.ufo.dwrefresh.view.interf.ILoadMoreFoot;
 import com.ufo.dwrefresh.view.utils.DensityUtils;

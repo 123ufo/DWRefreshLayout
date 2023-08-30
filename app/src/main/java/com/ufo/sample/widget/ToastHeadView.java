@@ -2,11 +2,12 @@ package com.ufo.sample.widget;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.support.annotation.ColorRes;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.annotation.ColorRes;
 
 import com.ufo.dwrefresh.view.interf.IRefreshHead;
 import com.ufo.dwrefresh.view.utils.DensityUtils;

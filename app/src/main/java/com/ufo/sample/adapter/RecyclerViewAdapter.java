@@ -1,11 +1,12 @@
 package com.ufo.sample.adapter;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.ufo.sample.R;
 
@@ -32,9 +33,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         return new MyViewHolder(itemView);
     }
 
-    public void setCount(int count){
+    public void setCount(int count) {
         mCount = count;
     }
+
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
         holder.tv.setText("内容:" + position);

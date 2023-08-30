@@ -4,12 +4,13 @@ import android.animation.Animator;
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.v4.view.ViewCompat;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.FrameLayout;
+
+import androidx.core.view.ViewCompat;
 
 import com.ufo.dwrefresh.view.interf.ILoadMoreFoot;
 import com.ufo.dwrefresh.view.interf.IRefreshHead;
@@ -275,7 +276,7 @@ public class DWRefreshLayout extends FrameLayout {
             case MotionEvent.ACTION_MOVE:
                 diffY = (int) (downY - ev.getY());
                 diffX = (int) (downX - ev.getX());
-                if(Math.abs(diffX) > Math.abs(diffY)){
+                if (Math.abs(diffX) > Math.abs(diffY)) {
                     return super.dispatchTouchEvent(ev);
                 }
                 if (diffY < 0) {
@@ -359,7 +360,7 @@ public class DWRefreshLayout extends FrameLayout {
                         reset((int) ((upY - downY) * mHeadViewTact), 0);
                     }
                 } else if (mDirection == DIRECTION_UP) {
-                    if(mDisenableLoadMore){
+                    if (mDisenableLoadMore) {
                         //禁止加载更多
                         return super.onTouchEvent(event);
                     }
@@ -395,11 +396,11 @@ public class DWRefreshLayout extends FrameLayout {
             if (moveDistance >= mHeadViewHeight) {
                 mIRefreshHead.onBound();
             }/* else {*/
-                mIRefreshHead.onPullDown(moveDistance);
+            mIRefreshHead.onPullDown(moveDistance);
 //            }
         } else {
             //上移
-            if(mDisenableLoadMore){
+            if (mDisenableLoadMore) {
                 //禁止加载更多
                 return;
             }
@@ -407,7 +408,7 @@ public class DWRefreshLayout extends FrameLayout {
             if (moveDistance <= -mFootViewHeight) {
                 mILoadMoreFoot.onBound();
             }/* else {*/
-                mILoadMoreFoot.onPullUp(Math.abs(moveDistance));
+            mILoadMoreFoot.onPullUp(Math.abs(moveDistance));
 //            }
         }
         Log.d(TAG, "moveDistance: " + moveDistance);
@@ -510,9 +511,10 @@ public class DWRefreshLayout extends FrameLayout {
 
     /**
      * 禁用上拉加载更多
+     *
      * @param lockLoadMore
      */
-    public void  lockLoadMore(boolean lockLoadMore){
+    public void lockLoadMore(boolean lockLoadMore) {
         this.mDisenableLoadMore = lockLoadMore;
     }
 

@@ -1,13 +1,10 @@
 package com.ufo.sample;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.ufo.dwrefresh.view.DWRefreshLayout;
-import com.ufo.libs.BannerView;
-import com.ufo.libs.callback.ImageLoadCallback;
-import com.ufo.sample.utils.ImageLoadUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,13 +25,13 @@ public class BannerViewActivity extends AppCompatActivity {
         mDwRefreshLayout = (DWRefreshLayout) findViewById(R.id.dwRefreshLayout);
         mDwRefreshLayout.setOnRefreshListener(new MyOnRefreshListener());
 
-        BannerView bannerView = (BannerView) findViewById(R.id.bannerView);
-        bannerView.setData(imgs, new ImageLoadCallback() {
-            @Override
-            public void loadImage(ImageView imageView, String imgUrl) {
-                ImageLoadUtils.loadToUrl(BannerViewActivity.this,imageView,imgUrl);
-            }
-        });
+//        BannerView bannerView = (BannerView) findViewById(R.id.bannerView);
+//        bannerView.setData(imgs, new ImageLoadCallback() {
+//            @Override
+//            public void loadImage(ImageView imageView, String imgUrl) {
+//                ImageLoadUtils.loadToUrl(BannerViewActivity.this, imageView, imgUrl);
+//            }
+//        });
     }
 
     private class MyOnRefreshListener implements DWRefreshLayout.OnRefreshListener {

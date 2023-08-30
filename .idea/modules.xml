@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DWRefreshLayout.iml" filepath="$PROJECT_DIR$/DWRefreshLayout.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/dwrefreshLibs/dwrefreshLibs.iml" filepath="$PROJECT_DIR$/dwrefreshLibs/dwrefreshLibs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DWRefreshLayout.iml" filepath="$PROJECT_DIR$/.idea/modules/DWRefreshLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DWRefreshLayout.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DWRefreshLayout.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DWRefreshLayout.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DWRefreshLayout.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DWRefreshLayout.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DWRefreshLayout.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DWRefreshLayout.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DWRefreshLayout.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dwrefreshLibs/DWRefreshLayout.dwrefreshLibs.iml" filepath="$PROJECT_DIR$/.idea/modules/dwrefreshLibs/DWRefreshLayout.dwrefreshLibs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dwrefreshLibs/DWRefreshLayout.dwrefreshLibs.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/dwrefreshLibs/DWRefreshLayout.dwrefreshLibs.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dwrefreshLibs/DWRefreshLayout.dwrefreshLibs.main.iml" filepath="$PROJECT_DIR$/.idea/modules/dwrefreshLibs/DWRefreshLayout.dwrefreshLibs.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dwrefreshLibs/DWRefreshLayout.dwrefreshLibs.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/dwrefreshLibs/DWRefreshLayout.dwrefreshLibs.unitTest.iml" />
     </modules>
   </component>
 </project>

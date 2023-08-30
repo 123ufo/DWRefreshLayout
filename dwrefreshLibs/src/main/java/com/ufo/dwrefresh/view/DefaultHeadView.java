@@ -1,12 +1,13 @@
 package com.ufo.dwrefresh.view;
 
 import android.content.Context;
-import android.support.annotation.ColorRes;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+
+import androidx.annotation.ColorRes;
 
 import com.ufo.dwrefresh.view.interf.IRefreshHead;
 import com.ufo.dwrefresh.view.utils.DensityUtils;
@@ -48,6 +49,7 @@ public class DefaultHeadView extends FrameLayout implements IRefreshHead {
 
     /**
      * 设置刷新头的状态颜色
+     *
      * @param textColor
      */
     public void setTextColor(@ColorRes int textColor) {
@@ -56,6 +58,7 @@ public class DefaultHeadView extends FrameLayout implements IRefreshHead {
 
     /**
      * 设置刷新头的状态文字大小
+     *
      * @param textSize
      */
     public void setTextSize(int textSize) {
