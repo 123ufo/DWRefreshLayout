@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <declare-styleable name="DWRefreshLayout">
+<!--
+
+  refresh_style用于设置刷新头的排放方式
+  1. style_below 表示刷新头在内容布局之下，也就是说刷新头与内容布局是帧的排放方式
+  2. style_default 表示刷新头与内容布局是垂直线性的排放方式，
+  3. style_material 表示刷新头是在内容布局之上，就像是material库中的SwipeRefreshLayout一样。
+
+  -->
         <attr name="refresh_style">
             <enum name="style_below" value="1"/>
             <enum name="style_default" value="2"/>
             <enum name="style_material" value="3"/>
         </attr>
-
     </declare-styleable>
 </resources>
